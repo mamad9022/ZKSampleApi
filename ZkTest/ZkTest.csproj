@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64;</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\MatchOnServers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Interop.zkemkeeper">
+      <HintPath>D:\learn\Zk_PW_Sample\Zk_PW_Sample\ZK_SAMPLE\uFace_iFace_Sample Demo_SDK_1398_09_04\uFace_iFace_Sample Demo_SDK_1398_09_04\AttLogs\obj\x86\Debug\Interop.zkemkeeper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
